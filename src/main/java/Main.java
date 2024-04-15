@@ -38,8 +38,8 @@ public class Main extends Application {
         // Добавляем иконку к главному окну;
         primaryStage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("/icons/icon.png"))));
 
-        // Создание кнопок;
-        // Создание кнопки "Ангарчане";________________________________________________________________________________
+        // Создание кнопок;____________________________________________________________________________________________
+        // Создание кнопки "Ангарчане";
         Button buttonHuman = ButtonHuman.buttonHuman();
         tabHumans tabHumans = new tabHumans();
         TabPane tabPaneHuman = new TabPane(); // Создаем TabPane;
