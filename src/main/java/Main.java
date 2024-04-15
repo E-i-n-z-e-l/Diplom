@@ -28,7 +28,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Энциклопедия Ангарска от А до Я");
 
-        // Создание главного окна; ________________________________________________________________________________
+        // Создание главного окна; ____________________________________________________________________________________
         Group root = new Group();
         Scene scene = new Scene(root, 1280, 720, Color.BEIGE);
         primaryStage.setScene(scene);
