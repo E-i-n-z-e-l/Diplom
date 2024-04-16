@@ -48,6 +48,7 @@ public class Main extends Application {
         tabPaneHuman.setLayoutY(140);
         ButtonHumansHandler handlerHuman = new ButtonHumansHandler(tabPaneHuman, tabHumans);
         buttonHuman.setOnAction(handlerHuman);
+        tabHumans.setPrimaryStage(primaryStage);
 
         // Создание кнопки "Символика";
         Button buttonSymbolism = ButtonSymbolism.buttonSymbolism();
