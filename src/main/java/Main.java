@@ -15,6 +15,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TabPane;
 import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.util.Objects;
@@ -68,6 +69,16 @@ public class Main extends Application {
 
         // Создание кнопки "Песни о городе";
         Button buttonSongs = ButtonSongs.buttonSongs();
+
+
+        // Создание надписи "Энциклопедия Ангарска от А до Я";
+        Text nameMain = new Text("Энциклопедия Ангарска от А до Я");
+        nameMain.setStyle("-fx-font-family: \"Times New Roman\"; " +
+                "-fx-font-size: 36pt; " +
+                "-fx-font-weight: bold; " +
+                "-fx-font-style: italic; ");
+        nameMain.setLayoutX(280);
+        nameMain.setLayoutY(500);
         // _________________________________________________________________________________________________________
 
 
@@ -79,6 +90,8 @@ public class Main extends Application {
         root.getChildren().add(tabPaneHuman);
         root.getChildren().add(tabPanePhotos);
         root.getChildren().add(tabPaneSymbolism);
+
+        root.getChildren().add(nameMain);
     }
 }
 
