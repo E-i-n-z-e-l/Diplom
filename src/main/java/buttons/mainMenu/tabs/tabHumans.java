@@ -1,9 +1,6 @@
 package buttons.mainMenu.tabs;
 
-import buttons.mainMenu.tabs.Citizen.windowHeroesCitizen;
-import buttons.mainMenu.tabs.Citizen.windowHonoraryCitizen;
-import buttons.mainMenu.tabs.Citizen.windowInstitutionsCitezen;
-import buttons.mainMenu.tabs.Citizen.windowStreetsCitezen;
+import buttons.mainMenu.tabs.Citizen.*;
 import javafx.scene.control.Button;
 import javafx.scene.control.Tab;
 import javafx.scene.layout.VBox;
@@ -32,6 +29,7 @@ public class tabHumans {
         heroesBTN.setOnAction(new windowHeroesCitizen(primaryStage));
 
         Button socialBTN = buttons.mainMenu.tabs.logicsTabsButtons.socialBTN.btnsocial();
+        socialBTN.setOnAction(new windowHeroesWork(primaryStage));
 
         VBox contentPane = new VBox(honoraryCitizensBTN, streetsBTN, institutionsBTN, heroesBTN, socialBTN);
 
