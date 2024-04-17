@@ -1,5 +1,6 @@
 package buttons.mainMenu.tabs;
 
+import buttons.mainMenu.tabs.Citizen.windowHeroesCitizen;
 import buttons.mainMenu.tabs.Citizen.windowHonoraryCitizen;
 import buttons.mainMenu.tabs.Citizen.windowInstitutionsCitezen;
 import buttons.mainMenu.tabs.Citizen.windowStreetsCitezen;
@@ -28,7 +29,7 @@ public class tabHumans {
         institutionsBTN.setOnAction(new windowInstitutionsCitezen(primaryStage));
 
         Button heroesBTN = buttons.mainMenu.tabs.logicsTabsButtons.heroesBTN.btnheroes();
-
+        heroesBTN.setOnAction(new windowHeroesCitizen(primaryStage));
 
         Button socialBTN = buttons.mainMenu.tabs.logicsTabsButtons.socialBTN.btnsocial();
 
