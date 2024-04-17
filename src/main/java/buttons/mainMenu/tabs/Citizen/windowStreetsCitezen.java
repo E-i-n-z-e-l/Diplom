@@ -156,7 +156,7 @@ public class windowStreetsCitezen implements EventHandler<ActionEvent> {
         textNovokshenov.setLayoutX(520);
         textNovokshenov.setLayoutY(150);
 
-        // Создаем список почетных граждан;
+        // Создаем список граждан;
         ObservableList<String> SreetsCitizens = FXCollections.observableArrayList(
                 "Выберите гражданина чьим именем названа улица","Жаднов Пётр Петрович",
                 "Насыров Юрий Григорьевич", "Новокшенов Виктор Фёдорович");
@@ -179,7 +179,7 @@ public class windowStreetsCitezen implements EventHandler<ActionEvent> {
 
         choice.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
             public void changed(ObservableValue<? extends String> ov, String old_val, String new_val) {
-                if (new_val.equals("Выберите гражданина")) {
+                if (new_val.equals("Выберите гражданина чьим именем названа улица")) {
                     Jadnov.setVisible(false);
                     textJadnov.setVisible(false);
                     Nasurov.setVisible(false);
@@ -242,6 +242,4 @@ public class windowStreetsCitezen implements EventHandler<ActionEvent> {
         primaryStage.toFront(); // Перемещаем исходное окно вверх стека окон
         newStage.show();
     }
-
-
 }

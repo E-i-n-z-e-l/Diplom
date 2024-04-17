@@ -1,6 +1,7 @@
 package buttons.mainMenu.tabs;
 
 import buttons.mainMenu.tabs.Citizen.windowHonoraryCitizen;
+import buttons.mainMenu.tabs.Citizen.windowInstitutionsCitezen;
 import buttons.mainMenu.tabs.Citizen.windowStreetsCitezen;
 import javafx.scene.control.Button;
 import javafx.scene.control.Tab;
@@ -24,7 +25,7 @@ public class tabHumans {
         streetsBTN.setOnAction(new windowStreetsCitezen(primaryStage));
 
         Button institutionsBTN = buttons.mainMenu.tabs.logicsTabsButtons.institutionsBTN.btnInstitutions();
-
+        institutionsBTN.setOnAction(new windowInstitutionsCitezen(primaryStage));
 
         Button heroesBTN = buttons.mainMenu.tabs.logicsTabsButtons.heroesBTN.btnheroes();
 
