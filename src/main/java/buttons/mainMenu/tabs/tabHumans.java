@@ -1,10 +1,8 @@
 package buttons.mainMenu.tabs;
 
-import buttons.mainMenu.tabs.HonoraryCitizen.windowHonoraryCitizen;
-import buttons.mainMenu.tabs.logicsTabsButtons.honoraryCitizensBTN;
-import javafx.geometry.Pos;
+import buttons.mainMenu.tabs.Citizen.windowHonoraryCitizen;
+import buttons.mainMenu.tabs.Citizen.windowStreetsCitezen;
 import javafx.scene.control.Button;
-import javafx.scene.control.ContentDisplay;
 import javafx.scene.control.Tab;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -23,15 +21,15 @@ public class tabHumans {
         honoraryCitizensBTN.setOnAction(new windowHonoraryCitizen(primaryStage));
 
         Button streetsBTN = buttons.mainMenu.tabs.logicsTabsButtons.streetsBTN.btnsreets();
+        streetsBTN.setOnAction(new windowStreetsCitezen(primaryStage));
+
+        Button institutionsBTN = buttons.mainMenu.tabs.logicsTabsButtons.institutionsBTN.btnInstitutions();
 
 
-        Button institutionsBTN = buttons.mainMenu.tabs.logicsTabsButtons.streetsBTN.btnsreets();
+        Button heroesBTN = buttons.mainMenu.tabs.logicsTabsButtons.heroesBTN.btnheroes();
 
 
-        Button heroesBTN = buttons.mainMenu.tabs.logicsTabsButtons.streetsBTN.btnsreets();
-
-
-        Button socialBTN = buttons.mainMenu.tabs.logicsTabsButtons.streetsBTN.btnsreets();
+        Button socialBTN = buttons.mainMenu.tabs.logicsTabsButtons.socialBTN.btnsocial();
 
         VBox contentPane = new VBox(honoraryCitizensBTN, streetsBTN, institutionsBTN, heroesBTN, socialBTN);
 

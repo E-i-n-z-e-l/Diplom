@@ -6,7 +6,7 @@ import javafx.scene.control.ContentDisplay;
 
 public class socialBTN {
     public static Button btnsocial() {
-        Button button = new Button();
+        Button button = new Button("Герои Соц труда");
         button.setPrefSize(280, 20);
         button.setAlignment(Pos.CENTER); // Выравнивает текст на кнопке по центру;
         button.setContentDisplay(ContentDisplay.RIGHT);
