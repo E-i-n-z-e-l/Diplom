@@ -40,6 +40,7 @@ public class Main extends Application {
         primaryStage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("/icons/icon.png"))));
 
         // Создание кнопок;____________________________________________________________________________________________
+
         // Создание кнопки "Ангарчане";
         Button buttonHuman = ButtonHuman.buttonHuman();
         tabHumans tabHumans = new tabHumans();
@@ -57,6 +58,7 @@ public class Main extends Application {
         TabPane tabPaneSymbolism = new TabPane();
         tabPaneSymbolism.setLayoutX(360);
         tabPaneSymbolism.setLayoutY(140);
+        tabSymbolism.setPrimaryStage(primaryStage);
         ButtonSymbolismHandler handlerSymbolism = new ButtonSymbolismHandler(tabPaneSymbolism, tubSymbolism);
         buttonSymbolism.setOnAction(handlerSymbolism);
 
