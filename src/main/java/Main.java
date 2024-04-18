@@ -1,3 +1,4 @@
+
 import buttons.mainMenu.buttonsMenu.ButtonHuman;
 import buttons.mainMenu.buttonsMenu.ButtonSongs;
 import buttons.mainMenu.buttonsMenu.ButtonSymbolism;
@@ -50,13 +51,12 @@ public class Main extends Application {
         tabHumans.setPrimaryStage(primaryStage);
         ButtonHumansHandler handlerHuman = new ButtonHumansHandler(tabPaneHuman, tabHumans);
         buttonHuman.setOnAction(handlerHuman);
-        //tabHumans.setPrimaryStage(primaryStage);
 
         // Создание кнопки "Символика";
         Button buttonSymbolism = ButtonSymbolism.buttonSymbolism();
         tabSymbolism tubSymbolism = new tabSymbolism();
         TabPane tabPaneSymbolism = new TabPane();
-        tabPaneSymbolism.setLayoutX(360);
+        tabPaneSymbolism.setLayoutX(560);
         tabPaneSymbolism.setLayoutY(140);
         tabSymbolism.setPrimaryStage(primaryStage);
         ButtonSymbolismHandler handlerSymbolism = new ButtonSymbolismHandler(tabPaneSymbolism, tubSymbolism);
@@ -71,9 +71,6 @@ public class Main extends Application {
         tabPhotos.setPrimaryStage(primaryStage);
         ButtonPhotosHandler handlerPhoto = new ButtonPhotosHandler(tabPanePhotos, tabPhotos);
         buttonPhotos.setOnAction(handlerPhoto);
-
-        // Создание кнопки "Песни о городе";
-        Button buttonSongs = ButtonSongs.buttonSongs();
 
 
         // Создание надписи "Энциклопедия Ангарска от А до Я";
@@ -90,7 +87,6 @@ public class Main extends Application {
         root.getChildren().add(buttonPhotos);
         root.getChildren().add(buttonHuman);
         root.getChildren().add(buttonSymbolism);
-        root.getChildren().add(buttonSongs);
 
         root.getChildren().add(tabPaneHuman);
         root.getChildren().add(tabPanePhotos);
@@ -101,6 +97,7 @@ public class Main extends Application {
 }
 
 /*
+Помести картинку в верхний левый угол!
 Успешное клонирование
 - Ось X будет от 0 до 1280 по горизонтали.
 - Ось Y будет от 0 до 720 по вертикали.
