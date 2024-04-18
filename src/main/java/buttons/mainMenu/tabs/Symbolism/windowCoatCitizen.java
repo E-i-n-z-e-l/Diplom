@@ -132,8 +132,8 @@ public class windowCoatCitizen implements EventHandler<ActionEvent> {
                 "этого герба не было.");
         textcoat1992.setFont(Font.font("Times New Roman", FontWeight.BOLD, 20));
         textcoat1992.setFill(Color.BLACK);
-        textcoat1992.setWrappingWidth(700);
-        textcoat1992.setLayoutX(550);
+        textcoat1992.setWrappingWidth(650);
+        textcoat1992.setLayoutX(600);
         textcoat1992.setLayoutY(150);
 
         Image imcoat1996 = new Image(this.getClass().getResource("/coat/Coat1996.png").toString());
@@ -161,7 +161,7 @@ public class windowCoatCitizen implements EventHandler<ActionEvent> {
                 "Именно в таком варианте герб и вошел в приложение к решению Думы № 159 от 29 апреля 1996 года. " +
                 "\n \nРешением Думы Ангарского городского округа от 24 июня 2015 года № 31-05/01рД герб города " +
                 "Ангарска утверждён официальным символом Ангарского городского округа.");
-        textcoat1996.setFont(Font.font("Times New Roman", FontWeight.BOLD, 20));
+        textcoat1996.setFont(Font.font("Times New Roman", FontWeight.BOLD, 18));
         textcoat1996.setFill(Color.BLACK);
         textcoat1996.setWrappingWidth(700);
         textcoat1996.setLayoutX(550);

@@ -1,6 +1,7 @@
 package buttons.mainMenu.tabs;
 
 import buttons.mainMenu.tabs.Symbolism.windowCoatCitizen;
+import buttons.mainMenu.tabs.Symbolism.windowFlagCitizen;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.ContentDisplay;
@@ -20,6 +21,7 @@ public class tabSymbolism {
         coatBTN.setOnAction(new windowCoatCitizen(primaryStage));
 
         Button flagBTN = buttons.mainMenu.tabs.logicsTabsButtons.flagBTN.btnFlag();
+        flagBTN.setOnAction(new windowFlagCitizen(primaryStage));
 
         VBox contentPane = new VBox(coatBTN, flagBTN);
 
