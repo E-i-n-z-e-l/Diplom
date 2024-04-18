@@ -1,6 +1,7 @@
 package buttons.mainMenu.tabs;
 
 import buttons.mainMenu.tabs.Symbolism.windowCoatCitizen;
+import buttons.mainMenu.tabs.photoCitizen.windowHistoricalPhoto;
 import buttons.mainMenu.tabs.photoCitizen.windowModernPhoto;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
@@ -21,7 +22,7 @@ public class tabPhotos {
         modernPhotoBTN.setOnAction(new windowModernPhoto(primaryStage));
 
         Button historicalPhotoBTN = buttons.mainMenu.tabs.logicsTabsButtons.historicalPhotoBTN.hisoricalbtn();
-        // historicalPhotoBTN.setOnAction(new );
+        historicalPhotoBTN.setOnAction(new windowHistoricalPhoto(primaryStage));
 
         VBox contentPane = new VBox(modernPhotoBTN, historicalPhotoBTN);
 

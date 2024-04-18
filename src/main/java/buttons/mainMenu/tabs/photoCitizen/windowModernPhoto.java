@@ -48,13 +48,13 @@ public class windowModernPhoto implements EventHandler<ActionEvent> {
         // Устанавливаем цвет фона сцены;
         pane.setBackground(new Background(new BackgroundFill(Color.BEIGE, null, null)));
 
-        Text namePhoto = new Text("Современные фотографии города");
-        namePhoto.setStyle("-fx-font-family: \"Times New Roman\"; " +
+        Text modernPhoto = new Text("Современные фотографии города");
+        modernPhoto.setStyle("-fx-font-family: \"Times New Roman\"; " +
                 "-fx-font-size: 36pt; " +
                 "-fx-font-weight: bold; " +
                 "-fx-font-style: italic; ");
-        namePhoto.setLayoutX(270);
-        namePhoto.setLayoutY(35);
+        modernPhoto.setLayoutX(270);
+        modernPhoto.setLayoutY(35);
 
         Image photoLOK = new Image(this.getClass().getResource("/photoCity/modern/LOK.jpg").toString());
         ImageView LOK;
@@ -152,7 +152,7 @@ public class windowModernPhoto implements EventHandler<ActionEvent> {
 
 
         pane.getChildren().add(choice);
-        pane.getChildren().add(namePhoto);
+        pane.getChildren().add(modernPhoto);
         pane.getChildren().add(LOK);
         pane.getChildren().add(EFL);
         pane.getChildren().add(Fontan);
