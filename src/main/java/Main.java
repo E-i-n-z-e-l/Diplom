@@ -68,6 +68,7 @@ public class Main extends Application {
         TabPane tabPanePhotos = new TabPane();
         tabPanePhotos.setLayoutX(660);
         tabPanePhotos.setLayoutY(140);
+        tabPhotos.setPrimaryStage(primaryStage);
         ButtonPhotosHandler handlerPhoto = new ButtonPhotosHandler(tabPanePhotos, tabPhotos);
         buttonPhotos.setOnAction(handlerPhoto);
 
