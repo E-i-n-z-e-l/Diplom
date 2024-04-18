@@ -15,6 +15,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TabPane;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -72,6 +73,15 @@ public class Main extends Application {
         ButtonPhotosHandler handlerPhoto = new ButtonPhotosHandler(tabPanePhotos, tabPhotos);
         buttonPhotos.setOnAction(handlerPhoto);
 
+        Image imLogo = new Image(this.getClass().getResource("/logo/Logo.jpg").toString());
+        ImageView Logo;
+        Logo = new ImageView(imLogo);
+        Logo.setPreserveRatio(true);
+        Logo.setFitHeight(250);
+        Logo.setFitWidth(250);
+        Logo.setLayoutX(1000);
+        Logo.setLayoutY(40);
+
 
         // Создание надписи "Энциклопедия Ангарска от А до Я";
         Text nameMain = new Text("Энциклопедия Ангарска от А до Я");
@@ -93,6 +103,7 @@ public class Main extends Application {
         root.getChildren().add(tabPaneSymbolism);
 
         root.getChildren().add(nameMain);
+        root.getChildren().add(Logo);
     }
 }
 
