@@ -56,7 +56,7 @@ public class Main extends Application {
         Button buttonSymbolism = ButtonSymbolism.buttonSymbolism();
         tabSymbolism tubSymbolism = new tabSymbolism();
         TabPane tabPaneSymbolism = new TabPane();
-        tabPaneSymbolism.setLayoutX(560);
+        tabPaneSymbolism.setLayoutX(360);
         tabPaneSymbolism.setLayoutY(140);
         tabSymbolism.setPrimaryStage(primaryStage);
         ButtonSymbolismHandler handlerSymbolism = new ButtonSymbolismHandler(tabPaneSymbolism, tubSymbolism);
