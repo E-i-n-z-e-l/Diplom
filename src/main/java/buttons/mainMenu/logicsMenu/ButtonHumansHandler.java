@@ -15,8 +15,6 @@ public class ButtonHumansHandler implements EventHandler<ActionEvent> {
         this.tabPane = tabPane;
         this.tabHumans = tabHumans;
     }
-
-
     @Override
     public void handle(ActionEvent event) {
         if (!isTabCreated) {

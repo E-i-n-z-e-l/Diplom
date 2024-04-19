@@ -22,5 +22,4 @@ public class honoraryCitizensBTN {
                 "-fx-border-color: black; "); // устанавливает цвет границы кнопки как черный;
         return button;
     }
-
 }
