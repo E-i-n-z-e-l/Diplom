@@ -28,6 +28,5 @@ public class ButtonHumansHandler implements EventHandler<ActionEvent> {
                 isTabCreated = false; // Сбрасываем флаг, чтобы можно было создать новую вкладку
             });
         }
-
     }
 }

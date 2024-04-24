@@ -31,17 +31,17 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Энциклопедия Ангарска от А до Я");
 
-        // Создание главного окна; ____________________________________________________________________________________
-        Group root = new Group();
-        Scene scene = new Scene(root, 1280, 720, Color.BEIGE);
-        primaryStage.setScene(scene);
-        primaryStage.setResizable(false);
-        primaryStage.show();
+        // Создание главного окна;
+        Group root = new Group(); // Создаем контейнер в котором будем все размещать;
+        Scene scene = new Scene(root, 1280, 720, Color.BEIGE); // Устанавливаем размеры окна;
+        primaryStage.setScene(scene); // Помещаем сцену в контейнер;
+        primaryStage.setResizable(false); // Запрещаем менять размеры этого окна;
+        primaryStage.show(); // Показываем окно пользователю;
 
         // Добавляем иконку к главному окну;
         primaryStage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("/icons/icon.png"))));
 
-        // Создание кнопок;____________________________________________________________________________________________
+        // _________________________________Создание кнопок________________________________________________________
 
         // Создание кнопки "Ангарчане";
         Button buttonHuman = ButtonHuman.buttonHuman();
@@ -73,6 +73,7 @@ public class Main extends Application {
         ButtonPhotosHandler handlerPhoto = new ButtonPhotosHandler(tabPanePhotos, tabPhotos);
         buttonPhotos.setOnAction(handlerPhoto);
 
+        // Добавление логотипа Музея Победы
         Image imLogo = new Image(this.getClass().getResource("/logo/Logo.jpg").toString());
         ImageView Logo;
         Logo = new ImageView(imLogo);
@@ -91,7 +92,6 @@ public class Main extends Application {
                 "-fx-font-style: italic; ");
         nameMain.setLayoutX(280);
         nameMain.setLayoutY(500);
-        // _________________________________________________________________________________________________________
 
 
         root.getChildren().add(buttonPhotos);
@@ -108,7 +108,6 @@ public class Main extends Application {
 }
 
 /*
-Написать тесты!
 - Ось X будет от 0 до 1280 по горизонтали.
 - Ось Y будет от 0 до 720 по вертикали.
 */

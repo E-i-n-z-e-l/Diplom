@@ -37,7 +37,7 @@ public class windowHeroesCitizen implements EventHandler<ActionEvent> {
         Stage newStage = new Stage(); // Создаем новое окно
         newStage.initOwner(primaryStage); // Устанавливаем основное окно владельцем нового окна;
         newStage.initModality(Modality.WINDOW_MODAL); // Устанавливаем режим модального окна (новое окно будет блокировать основное окно до закрытия);
-
+        newStage.setResizable(false);
         newStage.setOnCloseRequest(e -> {
             primaryStage.setOpacity(1);
             primaryStage.show();

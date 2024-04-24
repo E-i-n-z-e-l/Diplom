@@ -1,0 +1,173 @@
+@startuml
+class buttons.mainMenu.tabs.logicsTabsButtons.modernPhotoBTN {
++ {static} Button modernbtn()
+}
+
+class buttons.mainMenu.logicsMenu.ButtonHumansHandler {
+- boolean isTabCreated
+- TabPane tabPane
+- tabHumans tabHumans
++ void handle(ActionEvent)
+}
+
+
+class Main {
++ {static} void main(String[])
++ void start(Stage)
+}
+
+class buttons.mainMenu.tabs.Citizen.windowHeroesCitizen {
+- Stage primaryStage
++ void handle(ActionEvent)
+}
+
+
+class buttons.mainMenu.buttonsMenu.ButtonSongs {
++ {static} Button buttonSongs()
+}
+
+class buttons.mainMenu.tabs.tabSymbolism {
+- {static} Stage primaryStage
++ {static} void setPrimaryStage(Stage)
++ {static} Tab tabSymbolism()
+}
+
+
+class buttons.mainMenu.tabs.logicsTabsButtons.socialBTN {
++ {static} Button btnsocial()
+}
+
+class buttons.mainMenu.tabs.tabPhotos {
+- {static} Stage primaryStage
++ {static} void setPrimaryStage(Stage)
++ {static} Tab tabPhotos()
+}
+
+
+class buttons.mainMenu.logicsMenu.ButtonPhotosHandler {
+- boolean isTabCreated
+- TabPane tabPane
+- tabPhotos tabPhotos
++ void handle(ActionEvent)
+}
+
+
+class buttons.mainMenu.tabs.logicsTabsButtons.historicalPhotoBTN {
++ {static} Button hisoricalbtn()
+}
+
+class buttons.mainMenu.tabs.logicsTabsButtons.honoraryCitizensBTN {
++ {static} Button honoraryBTN()
+}
+
+class buttons.mainMenu.tabs.logicsTabsButtons.streetsBTN {
++ {static} Button btnsreets()
+}
+
+class buttons.mainMenu.tabs.Citizen.windowStreetsCitezen {
+- Stage primaryStage
++ void handle(ActionEvent)
+}
+
+
+class buttons.mainMenu.tabs.Symbolism.windowFlagCitizen {
+- Stage primaryStage
++ void handle(ActionEvent)
+}
+
+
+class buttons.mainMenu.tabs.logicsTabsButtons.institutionsBTN {
++ {static} Button btnInstitutions()
+}
+
+class buttons.mainMenu.logicsMenu.ButtonSymbolismHandler {
+- boolean isTabCreated
+- TabPane tabPane
+- tabSymbolism tabSymbolism
++ void handle(ActionEvent)
+}
+
+
+class buttons.mainMenu.tabs.photoCitizen.windowModernPhoto {
+- Stage primaryStage
++ void handle(ActionEvent)
+}
+
+
+class buttons.mainMenu.tabs.tabHumans {
+- {static} Stage primaryStage
++ {static} void setPrimaryStage(Stage)
++ {static} Tab tabHumans()
+}
+
+
+class buttons.mainMenu.buttonsMenu.ButtonSymbolism {
++ {static} Button buttonSymbolism()
+}
+
+class buttons.mainMenu.tabs.Citizen.windowHeroesWork {
+- Stage primaryStage
++ void handle(ActionEvent)
+}
+
+
+class buttons.mainMenu.tabs.Citizen.windowHonoraryCitizen {
+- Stage primaryStage
++ void handle(ActionEvent)
+}
+
+
+class buttons.mainMenu.buttonsMenu.ButtonsPhotos {
++ {static} Button buttonPhotos()
+}
+
+class buttons.mainMenu.buttonsMenu.ButtonHuman {
++ {static} Button buttonHuman()
+}
+
+class buttons.mainMenu.tabs.logicsTabsButtons.coatBTN {
++ {static} Button btnCoat()
+}
+
+class buttons.mainMenu.tabs.Symbolism.windowCoatCitizen {
+- Stage primaryStage
++ void handle(ActionEvent)
+}
+
+
+class buttons.mainMenu.tabs.logicsTabsButtons.heroesBTN {
++ {static} Button btnheroes()
+}
+
+class buttons.mainMenu.tabs.Citizen.windowInstitutionsCitezen {
+- Stage primaryStage
++ void handle(ActionEvent)
+}
+
+
+class buttons.mainMenu.tabs.logicsTabsButtons.flagBTN {
++ {static} Button btnFlag()
+}
+
+class buttons.mainMenu.tabs.photoCitizen.windowHistoricalPhoto {
+- Stage primaryStage
++ void handle(ActionEvent)
+}
+
+
+
+
+javafx.event.EventHandler <|.. buttons.mainMenu.logicsMenu.ButtonHumansHandler
+javafx.application.Application <|-- Main
+javafx.event.EventHandler <|.. buttons.mainMenu.tabs.Citizen.windowHeroesCitizen
+javafx.event.EventHandler <|.. buttons.mainMenu.logicsMenu.ButtonPhotosHandler
+javafx.event.EventHandler <|.. buttons.mainMenu.tabs.Citizen.windowStreetsCitezen
+javafx.event.EventHandler <|.. buttons.mainMenu.tabs.Symbolism.windowFlagCitizen
+javafx.event.EventHandler <|.. buttons.mainMenu.logicsMenu.ButtonSymbolismHandler
+javafx.event.EventHandler <|.. buttons.mainMenu.tabs.photoCitizen.windowModernPhoto
+javafx.event.EventHandler <|.. buttons.mainMenu.tabs.Citizen.windowHeroesWork
+javafx.event.EventHandler <|.. buttons.mainMenu.tabs.Citizen.windowHonoraryCitizen
+javafx.event.EventHandler <|.. buttons.mainMenu.tabs.Symbolism.windowCoatCitizen
+javafx.event.EventHandler <|.. buttons.mainMenu.tabs.Citizen.windowInstitutionsCitezen
+javafx.event.EventHandler <|.. buttons.mainMenu.tabs.photoCitizen.windowHistoricalPhoto
+@enduml

@@ -36,6 +36,7 @@ public class windowHonoraryCitizen implements EventHandler<ActionEvent> {
         primaryStage.setOpacity(0);
         Stage newStage = new Stage(); // Создаем новое окно
         newStage.initOwner(primaryStage); // Устанавливаем основное окно владельцем нового окна;
+        newStage.setResizable(false);
         newStage.initModality(Modality.WINDOW_MODAL); // Устанавливаем режим модального окна (новое окно будет блокировать основное окно до закрытия);
 
         newStage.setOnCloseRequest(e -> {

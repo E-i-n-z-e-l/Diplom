@@ -32,9 +32,7 @@ public class tabHumans {
         socialBTN.setOnAction(new windowHeroesWork(primaryStage));
 
         VBox contentPane = new VBox(honoraryCitizensBTN, streetsBTN, institutionsBTN, heroesBTN, socialBTN);
-
         newTab.setContent(contentPane);
-
         return newTab;
     }
 }
