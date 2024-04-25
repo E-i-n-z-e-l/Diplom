@@ -39,7 +39,7 @@ public class Main extends Application {
         primaryStage.show(); // Показываем окно пользователю;
 
         // Добавляем иконку к главному окну;
-        primaryStage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("/icons/icon.png"))));
+        primaryStage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("/logo/Logo.png"))));
 
         // _________________________________Создание кнопок________________________________________________________
 
@@ -74,7 +74,7 @@ public class Main extends Application {
         buttonPhotos.setOnAction(handlerPhoto);
 
         // Добавление логотипа Музея Победы
-        Image imLogo = new Image(this.getClass().getResource("/logo/Logo.jpg").toString());
+        Image imLogo = new Image(this.getClass().getResource("/logo/Logo.png").toString());
         ImageView Logo;
         Logo = new ImageView(imLogo);
         Logo.setPreserveRatio(true);
